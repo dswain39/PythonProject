@@ -13,17 +13,17 @@ setattr(obj,'mark',100)
 print(obj.mark)
 
 
-def cube(num):
-    return num * num * num
-
-def square(num):
-    return num * num
-
-def my_map(func, arg_list):
-    result = []
-    for i in arg_list:
-        result.append(func(i))
-    return result
+# def cube(num):
+#     return num * num * num
+#
+# def square(num):
+#     return num * num
+#
+# def my_map(func, arg_list):
+#     result = []
+#     for i in arg_list:
+#         result.append(func(i))
+#     return result
 #
 # squares = my_map
 # print(squares(cube,[1,2,3,4,5]))
