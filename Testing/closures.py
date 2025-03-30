@@ -13,7 +13,7 @@
 
 
 import logging
-logging.basicConfig(filename='//Testing/example.log', level=logging.INFO)
+logging.basicConfig(filename='/home/dibya/PycharmProjects/PythonEssentials/Testing/example.log', level=logging.INFO)
 
 def logger(func):
     def log_func(*args):
@@ -29,5 +29,9 @@ def sub(a, b):
 add_logger = logger(add)
 sub_logger = logger(sub)
 
-add_logger(4,5)
-sub_logger(10,4)
+# add_logger(4,5)
+# sub_logger(10,4)
+def mul(a,b):
+    return a * b
+mul_logger = logger(mul)
+mul_logger(5,4)
